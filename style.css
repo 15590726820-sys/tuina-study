@@ -1,0 +1,9 @@
+body{margin:0;font-family:-apple-system;background:#f5f6f8;}
+.app{max-width:500px;margin:auto;padding:20px;}
+h1{text-align:center;}
+.card{background:#fff;padding:20px;border-radius:12px;margin:20px 0;}
+.type{color:#888;font-size:14px;}
+.question{font-size:18px;margin:15px 0;}
+.answer{margin-top:15px;color:#2a6;}
+button{width:100%;padding:10px;border:none;border-radius:8px;margin-top:10px;}
+.controls{display:flex;gap:10px;}
