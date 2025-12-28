@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>推拿学刷题</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<h1>推拿学刷题</h1>
+<div id="progress"></div>
+<div class="card">
+<div class="type" id="type"></div>
+<div class="question" id="question"></div>
+<button onclick="toggleAnswer()">显示答案</button>
+<div class="answer" id="answer"></div>
+</div>
+<div class="controls">
+<button onclick="prev()">上一题</button>
+<button onclick="next()">下一题</button>
+</div>
+</div>
+<script src="data.js"></script>
+<script>
+let index=0,show=false;
+function render(){
+const q=questions[index];
+type.innerText=q.type;
+question.innerText=q.question;
+answer.innerText=show?q.answer:"";
+progress.innerText=`第 ${index+1} / ${questions.length} 题`;
+}
+function toggleAnswer(){show=!show;render();}
+function next(){if(index<questions.length-1){index++;show=false;render();}}
+function prev(){if(index>0){index--;show=false;render();}}
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+const questions=[{type:"简答题",question:"简要说出松解类手法的操作要求。",answer:"持久有力，均匀柔和；作用深透，稳中求效。"}];
